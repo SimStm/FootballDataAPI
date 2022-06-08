@@ -83,7 +83,9 @@ export interface TeamResult extends Result {
 export interface TeamSummary {
     id: number;
     name: string;
-    crestUrl: string | null;
+    shortName: string;
+    tla: string;
+    crestUrl: string;
 }
 interface Rank {
     position: number;
@@ -96,6 +98,7 @@ interface Rank {
     goalsFor: number;
     goalsAgainst: number;
     goalDifference: number;
+    form: string;
 }
 interface Standing {
     stage: Stage;
@@ -114,7 +117,7 @@ interface TeamName {
     name: string;
     shortName: string;
     tla: string;
-    crest: string;
+    crestUrl: string;
 }
 interface Referee {
     id: number;
