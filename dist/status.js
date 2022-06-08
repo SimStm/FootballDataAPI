@@ -7,6 +7,7 @@ exports["default"] = void 0;
 var Status;
 
 (function (Status) {
+  Status["TIMED"] = "TIMED";
   Status["SCHEDULED"] = "SCHEDULED";
   Status["LIVE"] = "LIVE";
   Status["IN_PLAY"] = "IN_PLAY";

@@ -1,4 +1,5 @@
 declare enum Status {
+    TIMED = "TIMED",
     SCHEDULED = "SCHEDULED",
     LIVE = "LIVE",
     IN_PLAY = "IN_PLAY",

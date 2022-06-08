@@ -23,6 +23,14 @@ interface IDate {
      */
     dateTo?: string;
 }
+interface ISingleDate {
+    /**
+     * string /YYYY-MM-dd/
+     *
+     * e.g. '2018-06-22'
+     */
+    date?: string;
+}
 interface ILimit {
     /**
      * Limits your result set to the given number.
@@ -68,8 +76,9 @@ export interface CompetitionsParams extends IPlan {
 export interface TeamParams extends ISeason, IStage {
     competitionId: number;
 }
-export interface StandingParams {
+export interface StandingParams extends ISingleDate, ISeason {
     competitionId: number;
+    matchday?: number;
     /**
      * "HOME" | "AWAY" | "TOTAL"
      */
@@ -87,7 +96,7 @@ export interface ScorerParams extends ILimit {
     competitionId: number;
 }
 export interface MatchesParams extends IStatus, IDate {
-    competitions: string | number | Array<number>;
+    competitions?: string | number | Array<number>;
 }
 export interface MatchFromTeamParams extends IDate, ILimit, IStatus, IVenue {
     teamId: number;

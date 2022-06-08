@@ -3,7 +3,7 @@ import { CompetitionsResult, CompetitionResult, TeamResult, StandingResult, Matc
 declare class FootballData {
     baseUrl: string;
     constructor(apiKey: string);
-    _request(endpoint: string, params: object | undefined, headerData: boolean): Promise<any>;
+    _request(endpoint: string, params: object, headerData: boolean): Promise<any>;
     _fillUrlParams(url: string, params: {
         [x: string]: any;
     }): string;
