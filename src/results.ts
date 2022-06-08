@@ -149,6 +149,8 @@ interface Referee {
 interface ScoreInfo {
   homeTeam: number | null;
   awayTeam: number | null;
+  home: number | null;
+  away: number | null;
 }
 
 interface Score {
