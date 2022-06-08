@@ -60,7 +60,8 @@ class FootballData {
 
     constructor(apiKey: string) {
         API_KEY = apiKey;
-        this.baseUrl = 'https://api.football-data.org/v2/';
+        // this.baseUrl = 'https://api.football-data.org/v2/';
+        this.baseUrl = 'https://api.football-data.org/v4/'; // 2022-06-08 -> UPDATED TO LATEST VERSION
     }
 
     _request(endpoint: string, params: object, headerData: boolean) {

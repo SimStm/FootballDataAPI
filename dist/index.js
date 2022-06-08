@@ -53,8 +53,9 @@ function () {
   function FootballData(apiKey) {
     _classCallCheck(this, FootballData);
 
-    API_KEY = apiKey;
-    this.baseUrl = 'https://api.football-data.org/v2/';
+    API_KEY = apiKey; // this.baseUrl = 'https://api.football-data.org/v2/';
+
+    this.baseUrl = 'https://api.football-data.org/v4/'; // 2022-06-08 -> UPDATED TO LATEST VERSION
   }
 
   _createClass(FootballData, [{
